@@ -10,6 +10,8 @@ import Contact from "../pages/Contact";
 import RootLayOut from "../pages/Layout";
 import QuickStart from "../pages/Learn";
 import Layout from "../pages/Learn/Layout";
+import Installation from "../pages/Learn/Installation";
+import Tutorial from "../pages/Learn/Tutorial";
 
 
 const router = createBrowserRouter(
@@ -33,8 +35,9 @@ const router = createBrowserRouter(
 
 
       <Route path="/Learn" element={<Layout/>} >
-        <Route index element={<QuickStart/>} />
-
+        <Route   element={<QuickStart/>} />
+        <Route path="/Learn/Tutorial" element={<Tutorial/>} />
+        <Route path="/Learn/Installation"  element={<Installation/>} />
 
       </Route>
     </>
